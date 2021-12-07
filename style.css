@@ -139,13 +139,13 @@ main .sobre{
     background: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0,0,0,0.50)100%);
 }
 
-main .titulos{
+main .titulo_sobre{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    margin-top: 20px;
+    padding-top: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -210,11 +210,23 @@ main .textos_sobre2{
     padding-bottom: 10px;
 }
 
-main .servicos{
-    padding-top: 10px;
+main .titulo_servicos{
     background: url('recursos/servicos.jpg');
-    height: 945px;
-    width: 100%;
+    height: 190px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 170px;
+    padding-top: 140px;
+    font-weight: bold;
+}
+
+main .servicos{
+    padding-top: 20px;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
 }
 
 main .titulos_secundarios{
@@ -222,7 +234,6 @@ main .titulos_secundarios{
 }
 
 main .fotos_servicos{
-    border-radius: 50%;
     width: 10%;
 }
 
@@ -230,24 +241,38 @@ main .textos_servicos{
 
 }
 
-main .duvidas{
-    background-color: #5982b1;
-    height: 500px;
+main .titulo_duvidas{
+    background: url('recursos/duvidas.jpg');
+    height: 335px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 170px;
+    padding-top: 250px;
+    font-weight: bold;
 }
 
-main .titulo_duvidas{
-    padding-left: 280px;
+main .duvidas{
+    background: #5982b1;
+    height: 600px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
 }
 
 main .contato{
     background: url('./recursos/contato.jpg');
-    height: 370px;
+    height: 400px;
     width: 100%;
     padding-top: 135px;
     color: white;
+}
+
+main .titulo_contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main .container_contato{
@@ -310,7 +335,7 @@ footer .container_footer{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px 15px 20px 15px;
+    padding: 10px 15px 18px 15px;
     background-color: rgb(36, 36, 36);
     color: rgb(170, 170, 170);
 }
@@ -365,14 +390,10 @@ footer .frase_footer{
     font-size: 13px;
 }
 
-footer .logo_dois{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    align-items: center;
+footer .desenvolvido{
+    font-size: 13px;
+    padding-top: 15px;
+    color: rgb(80, 80, 80);
 }
 
 footer .informacoes{
@@ -406,3 +427,6 @@ footer .espaco_menor{
 footer .espaco_maior{
     margin-left: 25px;
 }
+
+
+
