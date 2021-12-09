@@ -23,7 +23,7 @@ header .nome{
 header nav a{
     color:rgb(170, 170, 170);
     text-decoration: none;
-    margin-left: 40px;
+    padding-left: 40px;
 }
 
 header nav a:hover{
@@ -35,9 +35,9 @@ main .capa_principal{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px 20px 40px;
-    height: 780px;
+    justify-content: space-evenly;
+    padding: 20px 40px 20px 70px;
+    height: 650px;
     background: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0,0,0,0.50)100%), url('./recursos/cidade.jpg');
     background-size: cover;
     color: white;
@@ -54,54 +54,25 @@ main .texto_principal{
     font-weight: 500;
     font-size: 32px;
     width: 48%;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    text-align: center;
 }
 
 main .texto_secundario{
     font-weight: 350;
     font-size: 22px;
-    margin-bottom: 15px;
-    width: 56%;
+    padding-bottom: 15px;
+    width: 48%;
+    text-align: center;
 }
 
-main .icones_um{
-    display: flex;
-    flex-direction: column;
-}
-
-main .icone_um{
-    display: flex;
-    flex-direction: row;
-    font-size: 37px;
-    margin-bottom: 8px;
-}
-
-main .icone_dois{
-    display: flex;
-    flex-direction: row;
-    font-size: 29px;
-    margin-bottom: 12px;
-}
-
-main .icone_tres{
-    display: flex;
-    flex-direction: row;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-main .texto{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    font-size: 19px;
-    margin-left: 15px;
-    font-weight: 500;
+main .container_direita{
+    text-align: center;
 }
 
 main .texto_terciario{
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-weight: 450;
@@ -117,7 +88,7 @@ main .botao{
     font-weight: 450;
     cursor: pointer;
     transition: .3s ease all;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 main .botao:hover{
@@ -149,7 +120,7 @@ main .subtitulo_sobre{
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 
 main .equipe{
@@ -183,7 +154,7 @@ main .membro_tres{
 main .fotos_equipe{
     border-radius: 50%;
     width: 50%;
-    margin-top: 25px;
+    margin-top: 35px;
     margin-bottom: 10px;
     border: 3px solid #1155cc;
 }
@@ -191,7 +162,7 @@ main .fotos_equipe{
 main .nomes_equipe{
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 6px;
+    padding-bottom: 6px;
 }
 
 main .textos_sobre{
@@ -201,7 +172,7 @@ main .textos_sobre{
 main .textos_sobre2{
     font-size: 18px;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 main .titulo_servicos{
@@ -209,28 +180,26 @@ main .titulo_servicos{
     height: 190px;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 170px;
+    padding-left: 120px;
     padding-top: 140px;
     font-weight: bold;
 }
 
 main .servicos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main .mentoria{
     padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 3px dotted rgb(225, 225, 225);
 }
 
-main .esquerda{
+main .mentoria_esquerda{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,14 +209,16 @@ main .esquerda{
 }
 
 main .titulos_secundarios{
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     font-size: 22px;
     font-weight: bold;
+    text-align: center;
 }
 
 main .fotos_servicos{
     width: 70%;
     border: 3px solid #1155cc;
+    border-radius: 10px;
 }
 
 main .texto_mentoria{
@@ -263,7 +234,7 @@ main .aulas{
     padding-top: 10px;
 }
 
-main .direita{
+main .mentoria_direita{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,23 +256,27 @@ main .inclui{
     justify-content: center;
 }
 
-inclui .fas{
-    display: flex;
-    flex-direction: row;
+main .fas{
     color: #1155cc;
     font-size: 40px;
 }
 
-main .inclui_bonus{
-    padding-left: 12px;
-    font-size: 18px;
+main .textos_servicos{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    font-size: 20px;
 }
 
-main .ultimo_item_bonus{
+main .textos_servicos3{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-left: 10px;
 }
 
 main .bonus{
@@ -310,21 +285,7 @@ main .bonus{
     flex-wrap: wrap;
 }
 
-main .texto_servicos{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px 20px 25px 20px;
-    padding-right: 20px;
-    font-size: 20px;
-}
-
 main .bonus_esquerda{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-main .bonus_direita{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -336,26 +297,176 @@ main .item_bonus{
     justify-content: flex-start;
 }
 
-item_bonus .fas fa-check-square{
-    font-size: 10px;
-    color: #1155cc;
-    padding-right: 5px;
+main .inclui_bonus{
+    padding: 0 25px 10px 12px;
+    font-size: 18px;
+}
+
+main .bonus_direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main .ultimo_item_bonus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+main .analise{
+    display: flex;
+    flex-direction: row;
+}
+
+main .titulo_foto_analise{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px 80px 45px 80px;
+}
+
+main .texto_analise{
+    font-size: 20px;
+    padding-top: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+main .analise_esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    align-items: center;
+}
+
+main .analise_direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 38%;
+}
+
+main .titulo_analise{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+main .item_analise{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+main .item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 40px;
+}
+
+main .consultoria{
+    border-top: 3px dotted rgb(225, 225, 225);
+    display: flex;
+    flex-direction: row;
+}
+
+main .titulo_foto_consultoria{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 37%;
+    padding: 0px 20px 25px 20px;
+}
+
+main .titulo_consultoria{
+    padding-bottom: 20px;
+    padding-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main .inclui_consultoria{
+    padding-bottom: 20px;
+    padding-top: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+main .colunas{
+    display: flex;
+    flex-direction: row;
+}
+
+main .coluna_esquerda{
+    display: flex;
+    flex-direction: column;
+}
+
+main .coluna_direita{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+main .texto_consultoria{
+    font-size: 20px;
+    padding: 10px 5px 0 5px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+main .item_consultoria{
+    display: flex;
+    flex-direction: row;
+}
+
+main .consultoria_direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .textos_servicos2{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 
 main .titulo_duvidas{
     background: url('recursos/duvidas.jpg');
-    height: 350px;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 170px;
-    padding-top: 350px;
+    padding-top: 275px;
     font-weight: bold;
 }
 
 main .duvidas{
     background: #5982b1;
-    height: 500px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 300px;
 }
 
 footer .container_footer{
@@ -397,18 +508,18 @@ footer .instagram{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 footer .email{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 footer  nav .far{
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 35px;
     color: #1155cc;
     cursor: pointer;
@@ -417,7 +528,7 @@ footer  nav .far{
 }
 
 footer  nav .fab{
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 35px;
     color: #1155cc;
     cursor: pointer;
@@ -433,7 +544,7 @@ footer nav a:hover{
 footer .textos_contato{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    margin-left: 20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     font-weight: lighter;
@@ -443,7 +554,7 @@ footer .textos_contato{
 footer .nome_footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    margin-top: 25px;
+    padding-top: 25px;
     color:rgb(100, 100, 100);
 }
 
@@ -465,7 +576,7 @@ footer .informacoes{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 
 footer .local{
@@ -478,18 +589,15 @@ footer .local{
 footer .atendimento{
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    padding-top: 10px;
     color: white;
     font-size: 18px;
 }
 
 footer .espaco_menor{
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 footer .espaco_maior{
-    margin-left: 25px;
+    padding-left: 25px;
 }
-
-
-
